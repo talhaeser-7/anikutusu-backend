@@ -4,7 +4,7 @@ import express from 'express'
 
 import User from '../db/userModel.js'
 import tokenModel from '../db/tokenModel.js'
-
+require("bcryptjs")
 const router = express.Router()
 //kayıt olma
 router.post('/signup',async (req,res) =>{
